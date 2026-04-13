@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
+=======
+Backend/HELP.md
+target/
+Backend/.mvn/wrapper/maven-wrapper.jar
+>>>>>>> c1aaf8636f03e7c44a9d12c5b1e38c57d1844577
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -14,7 +20,11 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
+<<<<<<< HEAD
 .idea
+=======
+Backend/.idea
+>>>>>>> c1aaf8636f03e7c44a9d12c5b1e38c57d1844577
 *.iws
 *.iml
 *.ipr
