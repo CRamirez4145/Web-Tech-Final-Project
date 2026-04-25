@@ -1,28 +1,22 @@
-package edu.tcu.cs.projectpulse.student.war.dto;
+package edu.tcu.cs.projectpulse.instructor.report.dto;
 
-import java.time.LocalDateTime;
+import edu.tcu.cs.projectpulse.student.peer.dto.PeerEvaluationResponse;
+
+import java.math.BigDecimal;
 import java.util.List;
 
-public class WarResponse {
+public class StudentPeerEvaluationReportResponse {
 
-    private Long id;
     private Long studentId;
     private String studentName;
     private Long teamId;
+    private String teamName;
     private Long sectionId;
+    private String sectionName;
     private Long activeWeekId;
     private Integer weekNumber;
-    private LocalDateTime submittedAt;
-    private String status;
-    private List<WarActivityResponse> activities;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private BigDecimal overallAverageScore;
+    private List<PeerEvaluationResponse> evaluations;
 
     public Long getStudentId() {
         return studentId;
@@ -48,12 +42,28 @@ public class WarResponse {
         this.teamId = teamId;
     }
 
+    public String getTeamName() {
+        return teamName;
+    }
+
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
     public Long getSectionId() {
         return sectionId;
     }
 
     public void setSectionId(Long sectionId) {
         this.sectionId = sectionId;
+    }
+
+    public String getSectionName() {
+        return sectionName;
+    }
+
+    public void setSectionName(String sectionName) {
+        this.sectionName = sectionName;
     }
 
     public Long getActiveWeekId() {
@@ -72,27 +82,19 @@ public class WarResponse {
         this.weekNumber = weekNumber;
     }
 
-    public LocalDateTime getSubmittedAt() {
-        return submittedAt;
+    public BigDecimal getOverallAverageScore() {
+        return overallAverageScore;
     }
 
-    public void setSubmittedAt(LocalDateTime submittedAt) {
-        this.submittedAt = submittedAt;
+    public void setOverallAverageScore(BigDecimal overallAverageScore) {
+        this.overallAverageScore = overallAverageScore;
     }
 
-    public String getStatus() {
-        return status;
+    public List<PeerEvaluationResponse> getEvaluations() {
+        return evaluations;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public List<WarActivityResponse> getActivities() {
-        return activities;
-    }
-
-    public void setActivities(List<WarActivityResponse> activities) {
-        this.activities = activities;
+    public void setEvaluations(List<PeerEvaluationResponse> evaluations) {
+        this.evaluations = evaluations;
     }
 }

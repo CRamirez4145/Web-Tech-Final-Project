@@ -5,6 +5,7 @@ import edu.tcu.cs.projectpulse.common.exception.ResourceNotFoundException;
 import edu.tcu.cs.projectpulse.shared.entity.Section;
 import edu.tcu.cs.projectpulse.shared.entity.Team;
 import edu.tcu.cs.projectpulse.shared.entity.User;
+import edu.tcu.cs.projectpulse.shared.entity.UserRole;
 import edu.tcu.cs.projectpulse.shared.repository.SectionRepository;
 import edu.tcu.cs.projectpulse.shared.repository.TeamRepository;
 import edu.tcu.cs.projectpulse.shared.repository.UserRepository;
@@ -38,18 +39,21 @@ public class StudentAccountService {
 
         User user = new User();
         applyAccountUpdates(user, request, team, section);
+        user.setActive(true);
         return toResponse(userRepository.save(user));
     }
 
     @Transactional(readOnly = true)
     public StudentAccountResponse getAccount(Long studentId) {
         User user = getUser(studentId);
+        validateStudentRole(user);
         return toResponse(user);
     }
 
     @Transactional
     public StudentAccountResponse updateAccount(Long studentId, StudentAccountRequest request) {
         User user = getUser(studentId);
+        validateStudentRole(user);
         validateEmailIsAvailable(request.getEmail(), user.getId());
 
         Section section = getSection(request.getSectionId());
@@ -63,6 +67,12 @@ public class StudentAccountService {
     private User getUser(Long studentId) {
         return userRepository.findById(studentId)
                 .orElseThrow(() -> new ResourceNotFoundException("Student not found with id: " + studentId));
+    }
+
+    private void validateStudentRole(User user) {
+        if (user.getRole() != UserRole.STUDENT) {
+            throw new BusinessRuleException("This endpoint only supports student accounts.");
+        }
     }
 
     private Team getTeam(Long teamId) {
@@ -94,6 +104,7 @@ public class StudentAccountService {
         user.setEmail(request.getEmail().trim().toLowerCase());
         user.setFirstName(request.getFirstName().trim());
         user.setLastName(request.getLastName().trim());
+        user.setRole(UserRole.STUDENT);
         user.setTeam(team);
         user.setSection(section);
     }

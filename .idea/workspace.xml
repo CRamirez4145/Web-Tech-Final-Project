@@ -6,9 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="026981a8-ed8d-4d44-9f6e-904779869679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/ProjectPulseBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/ProjectPulseBackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/edu/tcu/cs/web_tech_final/WebTechFinalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/edu/tcu/cs/web_tech_final/WebTechFinalApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/shared/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/shared/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/shared/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/shared/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/account/service/StudentAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/account/service/StudentAccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/peer/dto/PeerEvaluationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/peer/dto/PeerEvaluationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/peer/repository/PeerEvaluationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/peer/repository/PeerEvaluationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/peer/service/PeerEvaluationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/peer/service/PeerEvaluationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/war/dto/WarResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/war/dto/WarResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/war/repository/WeeklyActivityReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/war/repository/WeeklyActivityReportRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/war/service/WarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/student/war/service/WarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/tcu/cs/projectpulse/student/account/service/StudentAccountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/tcu/cs/projectpulse/student/account/service/StudentAccountServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +54,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.StudentAccountControllerTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.ProjectPulseBackendApplication.executor": "Debug",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "CR-Friday",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/messi/Desktop/Springboot/Web_Tech_Final/Backend",
@@ -66,7 +80,30 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.StudentAccountControllerTest">
+    <configuration name="StudentAccountControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-pulse-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.tcu.cs.projectpulse.student.account.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.tcu.cs.projectpulse.student.account.controller" />
+      <option name="MAIN_CLASS_NAME" value="edu.tcu.cs.projectpulse.student.account.controller.StudentAccountControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectPulseBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="project-pulse-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.tcu.cs.projectpulse.ProjectPulseBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebTechFinalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="Web_Tech_Final" />
@@ -75,11 +112,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StudentAccountControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
         <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
       </set>
     </attachedChunks>
   </component>
@@ -91,6 +134,8 @@
       <option name="presentableId" value="Default" />
       <updated>1776116220533</updated>
       <workItem from="1776116223800" duration="322000" />
+      <workItem from="1776897575952" duration="573000" />
+      <workItem from="1777039983829" duration="4985000" />
     </task>
     <servers />
   </component>

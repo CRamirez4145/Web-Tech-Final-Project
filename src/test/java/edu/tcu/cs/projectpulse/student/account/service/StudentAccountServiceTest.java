@@ -5,6 +5,7 @@ import edu.tcu.cs.projectpulse.common.exception.ResourceNotFoundException;
 import edu.tcu.cs.projectpulse.shared.entity.Section;
 import edu.tcu.cs.projectpulse.shared.entity.Team;
 import edu.tcu.cs.projectpulse.shared.entity.User;
+import edu.tcu.cs.projectpulse.shared.entity.UserRole;
 import edu.tcu.cs.projectpulse.shared.repository.SectionRepository;
 import edu.tcu.cs.projectpulse.shared.repository.TeamRepository;
 import edu.tcu.cs.projectpulse.shared.repository.UserRepository;
@@ -62,6 +63,8 @@ class StudentAccountServiceTest {
         user.setEmail("javier@tcu.edu");
         user.setFirstName("Javier");
         user.setLastName("Lopez");
+        user.setRole(UserRole.STUDENT);
+        user.setActive(true);
         user.setTeam(team);
         user.setSection(section);
 

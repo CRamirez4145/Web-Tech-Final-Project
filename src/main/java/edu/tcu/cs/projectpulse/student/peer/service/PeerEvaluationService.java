@@ -185,6 +185,7 @@ public class PeerEvaluationService {
         PeerEvaluationResponse response = new PeerEvaluationResponse();
         response.setId(evaluation.getId());
         response.setEvaluatorId(evaluation.getEvaluator().getId());
+        response.setEvaluatorName(evaluation.getEvaluator().getFirstName() + " " + evaluation.getEvaluator().getLastName());
         response.setEvaluateeId(evaluation.getEvaluatee().getId());
         response.setEvaluateeName(evaluation.getEvaluatee().getFirstName() + " " + evaluation.getEvaluatee().getLastName());
         response.setTeamId(evaluation.getTeam().getId());

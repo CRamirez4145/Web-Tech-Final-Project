@@ -97,6 +97,7 @@ public class WarService {
         WarResponse response = new WarResponse();
         response.setId(report.getId());
         response.setStudentId(report.getStudent().getId());
+        response.setStudentName(report.getStudent().getFirstName() + " " + report.getStudent().getLastName());
         response.setTeamId(report.getTeam().getId());
         response.setSectionId(report.getSection().getId());
         response.setActiveWeekId(report.getActiveWeek().getId());

@@ -7,6 +7,7 @@ public class PeerEvaluationResponse {
 
     private Long id;
     private Long evaluatorId;
+    private String evaluatorName;
     private Long evaluateeId;
     private String evaluateeName;
     private Long teamId;
@@ -31,6 +32,14 @@ public class PeerEvaluationResponse {
 
     public void setEvaluatorId(Long evaluatorId) {
         this.evaluatorId = evaluatorId;
+    }
+
+    public String getEvaluatorName() {
+        return evaluatorName;
+    }
+
+    public void setEvaluatorName(String evaluatorName) {
+        this.evaluatorName = evaluatorName;
     }
 
     public Long getEvaluateeId() {
