@@ -28,6 +28,9 @@ public class RubricCriterion {
     @Column(length = 255)
     private String description;
 
+    @Column(name = "max_score", nullable = false)
+    private Integer maxScore;
+
     public Long getId() {
         return id;
     }
@@ -58,5 +61,13 @@ public class RubricCriterion {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Integer getMaxScore() {
+        return maxScore;
+    }
+
+    public void setMaxScore(Integer maxScore) {
+        this.maxScore = maxScore;
     }
 }
