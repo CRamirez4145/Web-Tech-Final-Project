@@ -10,6 +10,12 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     List<User> findByTeamId(Long teamId);
 
+    List<User> findByTeamIdOrderByLastNameAscFirstNameAsc(Long teamId);
+
+    List<User> findBySectionIdOrderByLastNameAscFirstNameAsc(Long sectionId);
+
+    boolean existsByTeamId(Long teamId);
+
     boolean existsByEmailIgnoreCase(String email);
 
     Optional<User> findByEmailIgnoreCase(String email);

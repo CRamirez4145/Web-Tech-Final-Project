@@ -10,6 +10,8 @@ public interface PeerEvaluationRepository extends JpaRepository<PeerEvaluation, 
 
     boolean existsByEvaluatorIdAndEvaluateeIdAndActiveWeekId(Long evaluatorId, Long evaluateeId, Long activeWeekId);
 
+    boolean existsByTeamId(Long teamId);
+
     @EntityGraph(attributePaths = {"evaluatee", "activeWeek", "criterionScores", "criterionScores.criterion"})
     List<PeerEvaluation> findByEvaluatorIdOrderBySubmittedAtDesc(Long evaluatorId);
 

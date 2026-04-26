@@ -11,6 +11,8 @@ public interface WeeklyActivityReportRepository extends JpaRepository<WeeklyActi
 
     boolean existsByStudentIdAndActiveWeekId(Long studentId, Long activeWeekId);
 
+    boolean existsByTeamId(Long teamId);
+
     @EntityGraph(attributePaths = {"activeWeek", "activities"})
     List<WeeklyActivityReport> findByStudentIdOrderBySubmittedAtDesc(Long studentId);
 

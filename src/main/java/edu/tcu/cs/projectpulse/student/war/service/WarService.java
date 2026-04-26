@@ -51,6 +51,10 @@ public class WarService {
             throw new BusinessRuleException("A WAR has already been submitted for this student and week.");
         }
 
+        if (student.getTeam() == null) {
+            throw new BusinessRuleException("Student must be assigned to a team before submitting a WAR.");
+        }
+
         WeeklyActivityReport report = new WeeklyActivityReport();
         report.setStudent(student);
         report.setTeam(student.getTeam());
