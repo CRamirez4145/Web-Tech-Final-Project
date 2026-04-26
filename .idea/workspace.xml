@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="026981a8-ed8d-4d44-9f6e-904779869679" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/ProjectPulseBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/ProjectPulseBackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/shared/entity/RubricCriterion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/tcu/cs/projectpulse/shared/entity/RubricCriterion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "rubric",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/messi/Desktop/Springboot/Web_Tech_Final/Backend",
