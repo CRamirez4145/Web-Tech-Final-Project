@@ -104,8 +104,10 @@ public class StudentAccountService {
         response.setEmail(user.getEmail());
         response.setFirstName(user.getFirstName());
         response.setLastName(user.getLastName());
-        response.setTeamId(user.getTeam().getId());
-        response.setTeamName(user.getTeam().getName());
+        if (user.getTeam() != null) {
+            response.setTeamId(user.getTeam().getId());
+            response.setTeamName(user.getTeam().getName());
+        }
         response.setSectionId(user.getSection().getId());
         response.setSectionName(user.getSection().getName());
         return response;

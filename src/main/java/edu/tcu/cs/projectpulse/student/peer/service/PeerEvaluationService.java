@@ -118,6 +118,10 @@ public class PeerEvaluationService {
                                                ActiveWeek activeWeek,
                                                Rubric rubric,
                                                CreatePeerEvaluationRequest request) {
+        if (evaluator.getTeam() == null || evaluatee.getTeam() == null) {
+            throw new BusinessRuleException("Students must be assigned to teams before peer evaluations can be submitted.");
+        }
+
         if (evaluator.getId().equals(evaluatee.getId())) {
             throw new BusinessRuleException("Students cannot evaluate themselves.");
         }
