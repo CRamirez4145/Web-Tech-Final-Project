@@ -1,2 +1,0 @@
-ALTER TABLE users
-    MODIFY COLUMN team_id BIGINT NULL;
