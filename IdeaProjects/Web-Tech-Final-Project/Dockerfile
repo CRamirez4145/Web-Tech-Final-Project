@@ -20,4 +20,4 @@ COPY --from=build /app/backend/target/project-pulse-backend-0.0.1-SNAPSHOT.jar a
 
 EXPOSE 8080
 
-ENTRYPOINT ["sh", "-c", "exec java ${JAVA_OPTS} -Dserver.port=${PORT:-8080} -jar /app/app.jar"]
+ENTRYPOINT ["sh", "-c", "exec java ${JAVA_OPTS} -jar /app/app.jar"]
