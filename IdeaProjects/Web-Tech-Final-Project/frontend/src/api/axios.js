@@ -1,9 +1,10 @@
 import axios from 'axios'
 
 const sessionStorageKey = 'project-pulse-session'
+const apiBaseUrl = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '')
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8080',
+  baseURL: apiBaseUrl,
 })
 
 apiClient.interceptors.request.use((config) => {
